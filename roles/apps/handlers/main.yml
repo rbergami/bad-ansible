@@ -1,0 +1,15 @@
+---
+# handlers file for tomcat
+#
+    - name: start_tomcat
+      service:
+        name: tomcat
+        state: started
+        enabled: yes
+
+    - name: start_pgsql
+      service:
+        name: postgresql
+        enabled: yes
+        state: started
+
